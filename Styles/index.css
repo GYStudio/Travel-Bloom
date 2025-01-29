@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo .icon {
+    margin-right: 8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #16a085;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    width: 250px;
+    outline: none;
+}
+
+.search-container input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background-color: #16a085;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+}
+
+.search-container button:hover {
+    background-color: #1abc9c;
+}
+
+.clear-btn {
+    background-color: #e74c3c;
+}
+
+.clear-btn:hover {
+    background-color: #c0392b;
+}
+
+.hero {
+    background-image: url('../Images/HomeCitySkyline.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    position: relative;
+    padding: 0 20px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    z-index: 2;
+}
+
+.social-media a {
+    margin: 15px 0;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #16a085;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 255, 0.8), rgba(0, 0, 0, 0) 70%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 25%;
+    margin-left: 20px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+    white-space: normal;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    max-width: 100%;
+    line-height: 1.5;
+}
+
+.vertical-line {
+    width: 2px;
+    background-color: white;
+    height: 40%;
+    position: relative;
+    left: 20px;
+    transform: translateY(-70%);
+    z-index: 2;
+}
+
+.book-now {
+    background-color: #16a085;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.book-now:hover {
+    background-color: #1abc9c;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-social-media a {
+    margin: 0 15px;
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.footer-social-media a:hover {
+    color: #16a085;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding: 1rem 2rem;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+
+.dest-card {
+    background-color: white;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 5px 7px rgba(255,255,255,0.3);
+    width: 50%;
+    margin: 2rem;
+}
+
+.dest-card h3 {
+    color: black;
+    padding: 1rem 0.5rem;
+}
+
+.dest-card p {
+    color: grey;
+    font-size: small !important;
+    padding: 0 !important;
+    margin: 0.5rem;
+}
+
+.dest-card button {
+    padding: 0.5rem 1rem !important;
+    margin: 0.5rem;
+}
+
+#result img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: inherit;
+}
